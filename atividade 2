@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    float primeiro, segundo, terceiro;
+
+    printf("Digite o primeiro número: ");
+    scanf("%f", &primeiro);
+
+    printf("Digite o segundo número: ");
+    scanf("%f", &segundo);
+
+    printf("Digite o terceiro número: ");
+    scanf("%f", &terceiro);
+
+    // Encontrando o maior número
+    float maior = primeiro;
+    if (segundo > maior) {
+        maior = segundo;
+    }
+    if (terceiro > maior) {
+        maior = terceiro;
+    }
+
+    printf("O maior número é: %.2f\n", maior);
+
+    return 0;
+}
+
