@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    float primeiro, segundo, terceiro;
+
+    printf("Digite o primeiro número: ");
+    scanf("%f", &primeiro);
+
+    printf("Digite o segundo número: ");
+    scanf("%f", &segundo);
+
+    printf("Digite o terceiro número: ");
+    scanf("%f", &terceiro);
+
+    // Encontrando o menor número
+    float menor = primeiro;
+    if (segundo < menor) {
+        menor = segundo;
+    }
+    if (terceiro < menor) {
+        menor = terceiro;
+    }
+
+    printf("O menor número é: %.2f\n", menor);
+
+    return 0;
+}
